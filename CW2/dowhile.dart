@@ -11,9 +11,9 @@ void main() {
     print("Choose an operation (+, -, *, /):");
     String? operation = stdin.readLineSync();
 
-    int result; // Declare the result variable
+    int result; 
 
-    // Perform the operation
+  
     switch (operation) {
       case '+':
         result = num1 + num2;
@@ -26,15 +26,15 @@ void main() {
         break;
       default:
         print("Invalid operation selected.");
-        continue; // Skip to the next iteration
+        continue; 
     }
 
     print("The result of $num1 $operation $num2 is: $result");
 
-    // Ask the user if they want to continue
+   
     print("Do you want to perform another operation? (yes/no):");
     choice = stdin.readLineSync()?.toLowerCase();
-  } while (choice == 'yes'); // Loop while the user enters "yes"
+  } while (choice == 'yes'); 
 
   print("Program exited. Thank you!");
 }
